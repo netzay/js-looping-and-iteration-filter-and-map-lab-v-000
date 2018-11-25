@@ -14,14 +14,15 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 function exactMatch(drivers, match){
   return drivers.filter(function(driver){
     for (const key in match){
-      matches == driver[key] === match[key];
+      matches = driver[key] === match[key];
     }
     return matches
   });
 }
 
-function exactMatchToList(drivers, revenue){
-  return exactMatch(drivers, revenue).map(function(driver){
+
+function exactMatchToList(drivers, match){
+  return exactMatch(drivers, matche).map(function(driver){
     return driver.name
   });
   
